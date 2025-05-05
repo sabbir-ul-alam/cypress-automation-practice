@@ -8,7 +8,7 @@ function getConfigFile(file){
 }
 
 module.exports = defineConfig({
-  projectId: 'practice-automation1',
+  projectId: '768ynj',
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/reports/mochawesome',
