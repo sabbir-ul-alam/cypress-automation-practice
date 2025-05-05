@@ -1,4 +1,4 @@
-import ProducPage from '../pageObjects/ProductPage'
+import ProductPage from '../pageObjects/ProductPage'
 
 class HomePage{
     
@@ -11,6 +11,6 @@ class HomePage{
         cy.get("#usernamee").type(userName);
         cy.get("#password").type(password);
         cy.contains("Sign In").click();
-        return new ProducPage();
+        return new ProductPage();
     }
 }

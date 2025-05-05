@@ -5,7 +5,8 @@ class ConfirmationPage{
         cy.get('#checkbox2').check();
         cy.contains('input','Purchase').click();
 
-
     }
 
 }
+
+export default ConfirmationPage;
