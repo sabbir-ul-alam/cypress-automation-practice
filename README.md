@@ -9,5 +9,16 @@
 # run cypress test
 npx cypress run --headed
 
+# run cypress from cmd with defined env
+# Run against UAT
+npx cypress run --env configFile=uat
+
+# Run against STG
+npx cypress run --env configFile=stg
+
+# cypress ui
+.\node_modules\.bin\cypress open --env 
+
+
 
 
