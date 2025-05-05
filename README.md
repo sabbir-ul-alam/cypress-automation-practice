@@ -6,3 +6,8 @@
 # Run cypress TestRunner
 `.\node_modules\.bin\cypress open`
 
+# run cypress test
+npx cypress run --headed
+
+
+

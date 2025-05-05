@@ -8,9 +8,11 @@ class HomePage{
     }
 
     login(userName, password){
-        cy.get("#usernamee").type(userName);
+        cy.get("#username").type(userName);
         cy.get("#password").type(password);
         cy.contains("Sign In").click();
         return new ProductPage();
     }
 }
+
+export default HomePage;
