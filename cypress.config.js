@@ -20,7 +20,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
-      const file = config.env.configFile || 'uat';
+      const file = config.env.configFile || 'stg';
       return{...config, ...getConfigFile(file)};
     },
     specPattern: 'cypress/tests/'
