@@ -1,8 +1,8 @@
 
-describe('Bypass amazon captcha' ,function(){
-    it('test 1', function(){
+describe('End to end Test' ,function(){
+    it('Login and submit an order', function(){
 
-        cy.visit("www.amazon.com")
+        
 
     });
 });
