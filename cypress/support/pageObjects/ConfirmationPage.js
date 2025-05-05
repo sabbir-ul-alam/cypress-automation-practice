@@ -16,6 +16,11 @@ class ConfirmationPage{
 
     }
 
+    getAlertMessage()
+    {
+        return cy.get(".alert-success")
+    }
+
 }
 
 export default ConfirmationPage;

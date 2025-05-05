@@ -19,6 +19,7 @@ describe('End to end Test' ,function(){
         const cartPage = productPage.goToCart();
         const confirmPage = cartPage.checkout();
         confirmPage.purchase();
+        confirmPage.getAlertMessage().should('contain','Susccess');
         
 
     });

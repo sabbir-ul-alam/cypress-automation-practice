@@ -19,6 +19,11 @@ npx cypress run --env configFile=stg
 # cypress ui
 .\node_modules\.bin\cypress open --env 
 
+# for reporting install cypress-mochawesome-reporter
+npm i --save-dev cypress-mochawesome-reporter
+
+
+
 
 
 
