@@ -33,11 +33,11 @@ describe("Cookies and local storage test", function () {
         cy.get(".action__submit").click();
         cy.wait(2000)
         cy.get(".order-summary button").eq(0).click();
-    
+
     });
 
     it('Test2-place order and Download CSV file', () => {
-        cy.readFile(Cypress.config("fileServerFolder")+"/cypress/downloads/order-invoice_anshika.csv")
+        cy.readFile(Cypress.config("fileServerFolder") + "/cypress/downloads/order-invoice_anshika.csv")
             .then(async (text) => {
                 const csv = await neatCSV(text)
                 console.log(csv)
@@ -45,5 +45,11 @@ describe("Cookies and local storage test", function () {
                 expect(productName).to.equal(actualProductCSV)
 
             });
+    });
+    it('Test3-read excel', () => {
+        const filePath = Cypress.config("fileServerFolder") + "/cypress/downloads/order-invoice_anshika.xlsx";
+        cy.task('excelToJsonConverter', filePath).then(function (result) {
+            expect(productName).to.equal(result.data[1].B);
+        });
     });
 })
