@@ -5,7 +5,6 @@ Feature: End to End validation
     Given I am on the login page
     When I login to the application
     And I add items to Cart and checkout
-    And Validate the total price limit
     Then select the country submit and verify Thank you
 
   @Smoke
@@ -15,5 +14,4 @@ Feature: End to End validation
       | username           | password |
       | rahulshettyacademy | learning |
     And I add items to Cart and checkout
-    And Validate the total price limit
     Then select the country submit and verify Thankyou

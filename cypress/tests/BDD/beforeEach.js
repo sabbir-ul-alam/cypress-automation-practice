@@ -4,6 +4,7 @@ beforeEach(()=>{
     cy.fixture('fixtureData').then(function(data)
     {
         this.data=data
+
   
     })
 
