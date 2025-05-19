@@ -16,6 +16,13 @@ When('I login to the application', function () {
 
 })
 
+When('I login to the application portal', function(dataTable){
+    this.productPage = homePage.login(dataTable.rawTable[1][0],dataTable.rawTable[1][1]);
+    const productName = this.data.productName;
+    this.productPage.selectProduct(productName);
+
+})
+
 When('I add items to Cart and checkout', function () {
     this.productPage.selectProduct(this.data.productName)
     this.cartPage = this.productPage.goToCart()

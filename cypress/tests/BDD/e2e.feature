@@ -9,9 +9,9 @@ Feature: End to End validation
 
   @Smoke
   Scenario Outline: Ecommerce products delivery cucumber driven
-    Given I am on Ecommerce Page
+    Given I am on the login page
     When I login to the application portal
-      | username           | password |
-      | rahulshettyacademy | learning |
+    | username           | password |
+    | rahulshettyacademy | learning |
     And I add items to Cart and checkout
-    Then select the country submit and verify Thankyou
+    Then select the country submit and verify Thank you
